@@ -3,8 +3,7 @@ import { loadTranslations } from "@calcom/i18n/server";
 import { IconSprites } from "@calcom/ui/components/icon";
 import { buildLegacyRequest } from "@lib/buildLegacyCtx";
 import { dir } from "i18next";
-import { Inter } from "next/font/google";
-import localFont from "next/font/local";
+import { Instrument_Sans, Newsreader } from "next/font/google";
 import { cookies, headers } from "next/headers";
 import Script from "next/script";
 import type React from "react";
@@ -14,13 +13,14 @@ import { AppRouterI18nProvider } from "./AppRouterI18nProvider";
 import { Providers } from "./providers";
 import { SpeculationRules } from "./SpeculationRules";
 
-const interFont = Inter({ subsets: ["latin"], variable: "--font-sans", preload: true, display: "swap" });
-const calFont = localFont({
-  src: "../fonts/CalSans-SemiBold.woff2",
+const instrumentSans = Instrument_Sans({ subsets: ["latin"], variable: "--font-sans", preload: true, display: "swap" });
+const newsreader = Newsreader({
+  subsets: ["latin"],
   variable: "--font-cal",
   preload: true,
-  display: "block",
-  weight: "600",
+  display: "swap",
+  weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
 });
 
 export const viewport = {
@@ -32,11 +32,11 @@ export const viewport = {
   themeColor: [
     {
       media: "(prefers-color-scheme: light)",
-      color: "#f9fafb",
+      color: "#F7F5F2",
     },
     {
       media: "(prefers-color-scheme: dark)",
-      color: "#1C1C1C",
+      color: "#0F1115",
     },
   ],
 };
@@ -68,8 +68,8 @@ export const metadata = {
     "application-TileColor": "#ff0000",
   },
   twitter: {
-    site: "@calcom",
-    creator: "@calcom",
+    site: "@thechanstandard",
+    creator: "@thechanstandard",
     card: "summary_large_image",
   },
   robots: {
@@ -116,8 +116,8 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       <head nonce={nonce}>
         <style>{`
           :root {
-            --font-sans: ${interFont.style.fontFamily.replace(/\'/g, "")};
-            --font-cal: ${calFont.style.fontFamily.replace(/\'/g, "")};
+            --font-sans: ${instrumentSans.style.fontFamily.replace(/\'/g, "")};
+            --font-cal: ${newsreader.style.fontFamily.replace(/\'/g, "")};
           }
         `}</style>
         {process.env.NODE_ENV === "development" && (
