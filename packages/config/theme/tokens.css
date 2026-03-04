@@ -238,22 +238,22 @@
 
   --radius-none: 0px;
 
-  /* Background Standard */
-  --cal-bg-emphasis: hsla(220, 13%, 91%, 1);
-  --cal-bg: hsla(0, 0%, 100%, 1);
-  --cal-bg-subtle: hsla(220, 14%, 94%, 1);
-  --cal-bg-muted: hsla(210, 20%, 97%, 1);
-  --cal-bg-inverted: hsla(210, 30%, 4%, 1);
+  /* Background Standard â The Channel Standard */
+  --cal-bg-emphasis: hsla(30, 10%, 88%, 1);
+  --cal-bg: hsla(30, 25%, 96%, 1); /* #F7F5F2 cream */
+  --cal-bg-subtle: hsla(30, 15%, 94%, 1);
+  --cal-bg-muted: hsla(30, 20%, 97%, 1);
+  --cal-bg-inverted: hsla(225, 18%, 7%, 1); /* #0F1115 dark */
 
-  /* Background Primary */
-  --cal-bg-primary: hsla(214, 30%, 16%, 1);
-  --cal-bg-primary-emphasis: hsla(220, 6%, 25%, 1);
-  --cal-bg-primary-muted: hsla(220, 14%, 94%, 1);
+  /* Background Primary â TCS Teal */
+  --cal-bg-primary: hsla(170, 71%, 28%, 1); /* #157A6E */
+  --cal-bg-primary-emphasis: hsla(170, 71%, 23%, 1); /* #116559 darker teal */
+  --cal-bg-primary-muted: hsla(170, 30%, 93%, 1);
 
-  /* Background Brand */
-  --cal-bg-brand: hsla(214, 30%, 16%, 1);
-  --cal-bg-brand-emphasis: hsla(220, 6%, 25%, 1);
-  --cal-bg-brand-muted: hsla(220, 14%, 94%, 1);
+  /* Background Brand â TCS Teal */
+  --cal-bg-brand: hsla(170, 71%, 28%, 1); /* #157A6E */
+  --cal-bg-brand-emphasis: hsla(170, 71%, 23%, 1); /* #116559 */
+  --cal-bg-brand-muted: hsla(170, 30%, 93%, 1);
 
   /* Background Semantic */
   --cal-bg-semantic-info-subtle: hsla(212, 88%, 97%, 1);
@@ -300,10 +300,10 @@
   --cal-border-semantic-error-subtle: hsla(0, 96%, 89%, 1);
   --cal-border-booker: var(--cal-border-subtle);
 
-  /* Content/Text Standard */
-  --cal-text-emphasis: hsla(210, 30%, 4%, 1);
-  --cal-text: hsla(220, 6%, 25%, 1);
-  --cal-text-subtle: hsla(220, 9%, 46%, 1);
+  /* Content/Text Standard â The Channel Standard */
+  --cal-text-emphasis: hsla(225, 18%, 7%, 1); /* #0F1115 */
+  --cal-text: hsla(0, 0%, 29%, 1); /* #4A4A4A */
+  --cal-text-subtle: hsla(0, 0%, 42%, 1); /* #6B6B6B */
   --cal-text-muted: hsla(218, 11%, 65%, 1);
   --cal-text-inverted: hsla(0, 0%, 100%, 1);
 
@@ -328,9 +328,9 @@
   --cal-text-attention: hsla(16, 62%, 28%, 1);
   --cal-text-error: hsla(0, 63%, 31%, 1);
 
-  /* Brand */
-  --cal-brand: hsla(221, 39%, 11%, 1);
-  --cal-brand-emphasis: hsla(0, 0%, 6%, 1);
+  /* Brand â The Channel Standard Teal */
+  --cal-brand: hsla(170, 71%, 28%, 1); /* #157A6E */
+  --cal-brand-emphasis: hsla(170, 71%, 23%, 1); /* #116559 */
   --cal-brand-text: hsla(0, 0%, 100%, 1);
 
   /* Box Shadows */
